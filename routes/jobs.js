@@ -6,7 +6,7 @@ const Job = require("../models/Job");
 
 // rota de teste
 router.get("/test", (req,res) => {
-    res.send("deu certo");
+    res.send("Teste de rota: sucefull");
 });
 
 // detalhe da vaga
@@ -23,7 +23,7 @@ router.get('/add', (req,res) => {
     res.render('add');
 })
 
-// add job bia post
+// add job via post
 router.post('/add', (req, res) => {
 
     let {title, salary, description, email, new_job, company} = req.body;
